@@ -6,28 +6,43 @@ const passport=require('passport');
 const Mongostore = require('connect-mongo')(session);
  require('./config/passport_config');
 
+// const app = express();
+// const port = process.env.PORT ;
+// const URI = process.env.MLAB
+
+// //server listing on port 3000
+// app.listen(port, () => {
+
+//     console.log(`server listing on port ${port}`);
+
+// });
+
+
+
+
+// //connection with mongoose
+// mongoose.Promise = global.Promise;
+// mongoose.connect(URI , {useNewUrlParser:true} ).then(() =>{
+//     console.log('db connected ');
+// }).catch((err)=>{
+//     console.log(err);
+// })
 const app = express();
-const port = process.env.PORT ;
-const URI = process.env.MLAB
+const port = process.env.PORT || 3000;
+const URI = process.env.MLAB ; 
 
 //server listing on port 3000
 app.listen(port, () => {
-
     console.log(`server listing on port ${port}`);
-
 });
-
-
-
 
 //connection with mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect(URI , {useNewUrlParser:true} ).then(() =>{
-    console.log('db connected ');
-}).catch((err)=>{
+mongoose.connect(URI).then(() => {
+    console.log('Database Connnected');
+}).catch((err) => {
     console.log(err);
-})
-
+});
 
 
 
