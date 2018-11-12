@@ -12,7 +12,7 @@
         <!--Fontawesome CDN link-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
             crossorigin="anonymous">
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap4/bootstrap.min.css">
@@ -25,8 +25,8 @@
         <script src="vendor/modernizr-3.6.0.min.js"></script>
         <script src="js/CountDown.js"></script>
         <script src="js/CountDownFinal.js"></script>
-<script>
-$(document).ready(function() {
+        <script>
+            $(document).ready(function() {
   $("#password2").keyup(validate);
 });
 
@@ -74,76 +74,124 @@ function validate() {
             <!--main text here-->
             <div class="col-md-8" style="height: 700px; margin-left:8%; ">
                 <fieldset id="SignUp">
-                    <form method="POST" action="/register" autocomplete="on">
+                    <form method="POST" action="/register" class="form-inline" autocomplete="on">
                         <legend>
                             <h4>Complete Registration</h4>
-                            
+
                             <div class="form-group" id="Complate_Registration">
 
-                                <input type="text" class="form-control" id="First_Name" placeholder="First Name" name="F_NAME" required />
-                                <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" name="L_NAME" required />
+                                <input type="text" class="form-control" id="First_Name" placeholder="First Name" name="F_NAME"
+                                    required />
+                                <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" name="L_NAME"
+                                    required />
                             </div>
                             <div class="form-group">
-                                            <select class="form-control"  style="width: 45%;"  name="B_NAME"   required />
-                                                <option selected disabled value ="">-- service you offer --</option>
-                                                <option>AC &amp; HVAC Technician</option>
-                                                <option>Appliance Repair</option>
-                                                <option>Carpenter</option>
-                                                <option>Cleaner &amp; Janitor</option>
-                                                <option>Construction Management</option>
-                                                <option>Electrician</option>
-                                                <option>Generator Maintenance</option>
-                                                <option>Glass &amp; Window Services</option>
-                                                <option>Painter</option>
-                                                <option>Plumber</option>
-                                                <option>Maintenance Packages</option>
-                                                <option>Other Services</option>
-                                            </select>
-                                                             
-                                <input type="number" class="form-control" id="ABN_NO" placeholder="ABN NO" style="margin-top: 5%;" name="ABN" required />
+                                <select class="form-control" name="B_NAME" required />
+                                <option selected disabled value="">-- service you offer --</option>
+                                <option>AC &amp; HVAC Technician</option>
+                                <option>Appliance Repair</option>
+                                <option>Audiovisual Equipment Installation</option>
+                                <option>Bathroom Renovation</option>
+                                <option>Building Construction</option>
+                                <option>Electrician</option>
+                                <option>Bricklaying</option>
+                                <option>Carpenter</option>
+                                <option>Cleaning</option>
+                                <option>Concrete &amp; Cement</option>
+                                <option>Construction Services</option>
+                                <option>Drainers</option>
+                                <option>Earthmoving</option>
+                                <option>Electricians</option>
+                                <option>Fencing Construction</option>
+                                <option>Flooring</option>
+                                <option>Gardeners</option>
+                                <option>Glazier</option>
+                                <option>Guttering</option>
+                                <option>Handyman</option>
+                                <option>Home Pools &amp; Spas</option>
+                                <option>Indoor Home Improvement</option>
+                                <option>Installation Trade Services</option>
+                                <option>Insulation</option>
+                                <option>Kitchen Renovation</option>
+                                <option>Landscaping</option>
+                                <option>Locksmiths</option>
+                                <option>Outdoor Home Improvement</option>
+                                <option>Painters</option>
+                                <option>Pest Control</option>
+                                <option>Plasterers</option>
+                                <option>Plumbing</option>
+                                <option>Refrigeration Installation &amp; Repair</option>
+                                <option>Removalists</option>
+                                <option>Roofing </option>
+                                <option>Rubbish &amp; Waste Removal</option>
+                                <option>Security &amp; Safety System Installation</option>
+                                <option>Shades &amp; Blinds</option>
+                                <option>Solar</option>
+                                <option>Tiling</option>
+                                <option>Tree Surgeon</option>
+
+                                </select>
+
+                                <input style="margin-left: 12px; margin-top: 3%;" type="number" class="form-control" id="ABN_NO" placeholder="ABN NO" style="margin-top: 2%;"
+                                    name="ABN" required />
                             </div>
                             <!--Address-->
-                            <div class="form-group">
+                            <div class="form-group" style="margin-top: 3%;">
 
-                                <input type="text" class="form-control" id="Street_Address" placeholder="Street Address"
-                                    name="S_ADRESS"  required />
-                                <input type="number" class="form-control" id="Postel_Code" placeholder="Postel Code" name="P_CODE"  required/>
+                                <input type="text" class="form-control"  style="width: 60%;" id="Street_Address" placeholder="Street Address"
+                                    name="S_ADRESS" required />
+                                <input type="number" style="width: 30%;" class="form-control" id="Postel_Code" placeholder="Postel Code"
+                                    name="P_CODE" required />
                             </div>
                             <!--Address-->
 
 
                             <!--Postel-->
-                            <div class="form-group">
+                            <div class="form-group" style=" display: flex;
+                            flex-flow: row wrap;
+                            align-items: center; margin: 5px 5px 5px 0; ">
+                                <select class="form-control" name="STATE"  style="width: 50%;" required >
+                                <option selected disabled value="">-- STATE --</option>
+                                <option>Melbourne</option>
+                                <option>Victoria</option>
+                                </select>
 
-                                <input type="text" class="form-control" id="State" placeholder="State" name="STATE" required />
-                                <input type="text" class="form-control" id="Suburb" placeholder="Subburb" name="SUBURB" required />
+                                <input style="margin-top: 3%; margin-left: 15px" type="text" class="form-control" id="Suburb"
+                                    placeholder="Subburb" name="SUBURB" required />
                             </div>
                             <!--Ending postel-->
                             <div class="form-group">
 
-                                <input type="number" class="form-control" id="Contact_No" placeholder="Contact No" name="CONTACT" required />
+                                <input type="number" class="form-control" id="Contact_No" placeholder="Contact No" name="CONTACT"
+                                    required />
                                 <input type="number" class="form-control" id="Contact_Optional" placeholder="Contact No (Optional)"
-                                    name="CONTACT2" >
+                                    name="CONTACT2">
                             </div>
 
                             <div class="form-group">
 
                                 <input type="email" class="form-control" id="email_varification" placeholder="Enter email"
-                                    name="EMAIL" required/>
+                                    name="EMAIL" required />
                             </div>
                             <div class="form-group">
 
-                                <input type="password" class="form-control"  id="password1" placeholder="Create password" name="PASS" required />
-                                <input type="password" class="form-control"  id="password2" placeholder="Confirm password"  name="PASS_2" required />
-                               
-                              
+                                <input type="password" class="form-control" id="password1" placeholder="Create password"
+                                    name="PASS" required />
+                                <input type="password" class="form-control" id="password2" placeholder="Confirm password"
+                                    name="PASS_2" required />
+
+
                             </div>
                             <div class="form-group">
-                                    <span><p id="validate-status"></p></span>
-                                  
-                                </div>
+                                <span>
+                                    <p id="validate-status"></p>
+                                </span>
+
+                            </div>
                             <div>
-                                <button type="submit" class="btn btn-danger" id="account_btn"><h5 style="color: white ; height: 20px;;">Create Account</h5></button>
+                                <button type="submit" class="btn btn-danger" id="account_btn">
+                                    <h5 style="color: white ; height: 20px;;">Create Account</h5>
+                                </button>
                             </div>
                         </legend>
                     </form>
@@ -158,35 +206,37 @@ function validate() {
             height:400px;
             z-index: -100;
             position: absolute;">
-    
-    
+
+
             <!-- Footer Links -->
             <div class="container text-center text-md-left mt-5">
-    
+
                 <!-- Grid row -->
                 <div class="row col-md-12">
-    
+
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-4 ">
-    
+
                         <!-- Content -->
                         <img src="images/Footer_logo.png" alt="" style="
                         width: 230px;
                         height: 60px;">
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; ">
                         <p id="footer-text" style="color: white">Welcome to Trade Pages Australia – a platform where
-                            tradesmen find quality jobs and consumers connect with trust worthy and qualified tradesmen.
+                            tradesmen find quality jobs and consumers connect with trust worthy and qualified
+                            tradesmen.
                             Get registered today and enjoy three months membership free of charge. Consistent supply of
-                            quality leads and goodbye to dry spells. Have your dedicated profile page and show your skills
+                            quality leads and goodbye to dry spells. Have your dedicated profile page and show your
+                            skills
                             to your customers. A great opportunity to take your business to next level. </p>
-    
+
                     </div>
-    
+
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3  mx-auto mb-md-0 mb-4" style="margin-left: 15%;">
-    
+
                         <!-- Links -->
-                        <h6 class="text-uppercase " style="color: white" >Contact US</h6>
+                        <h6 class="text-uppercase " style="color: white">Contact US</h6>
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <p style="color: white">
                             <i class="fa fa-home mr-2"></i>level 18, 101 Collins Street Melbourne Vic 3000</p>
@@ -195,39 +245,37 @@ function validate() {
                         <p style="color: white">
                             <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
                     </div>
-    
-    
+
+
                     <!-- Grid column -->
                     <div class="col-md-3">
-    
+
                         <!-- Links -->
                         <h6 class="text-uppercase " style="color: white">Follow us</h6>
-    
+
                         <div class="Social_Icon"><i class="fab fa-facebook" style="color: white"></i>
                             <i class="fab fa-twitter" style="color: white"></i>
                             <i class="fab fa-instagram" style="color: white"></i>
-                            <i class="fab fa-youtube" style="color: white" ></i></div>
-    
+                            <i class="fab fa-youtube" style="color: white"></i></div>
+
                     </div>
                 </div>
-    
-                <div  class="col-md-4" id="copy_right" style="margin-top:3% ;   margin-left: 27%;" >
-                        <div id="trapezoid">
-                            <p>Copyright 2018 <span>TRADEPAGES </span>All Right Reserved</p>
-                            </div>    
+
+                <div class="col-md-4" id="copy_right" style="margin-top:3% ;   margin-left: 27%;">
+                    <div id="trapezoid">
+                        <p>Copyright 2018 <span>TRADEPAGES </span>All Right Reserved</p>
                     </div>
+                </div>
             </div>
-    
-            </div>
-    
-    
-            </div>
-    
-        </footer>
 
-            <!--Footer Ended here-->
+    </div>
 
 
+    </div>
+
+    </footer>
+
+    <!--Footer Ended here-->
 
 
 
@@ -238,26 +286,28 @@ function validate() {
 
 
 
-            <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-            <script>
-                window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-            </script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
 
-            <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-            <script>
-                window.ga = function () {
-                    ga.q.push(arguments)
-                };
-                ga.q = [];
-                ga.l = +new Date;
-                ga('create', 'UA-XXXXX-Y', 'auto');
-                ga('send', 'pageview')
-            </script>
-            <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
