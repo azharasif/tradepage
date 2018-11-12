@@ -74,19 +74,18 @@ function validate() {
             <!--main text here-->
             <div class="col-md-8" style="height: 700px; margin-left:8%; ">
                 <fieldset id="SignUp">
-                    <form method="POST" action="/register">
+                    <form method="POST" action="/register" autocomplete="on">
                         <legend>
                             <h4>Complete Registration</h4>
                             
                             <div class="form-group" id="Complate_Registration">
 
-                                <input type="text" class="form-control" id="First_Name" placeholder="First Name" name="F_NAME" required >
-                                <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" name="L_NAME" required>
+                                <input type="text" class="form-control" id="First_Name" placeholder="First Name" name="F_NAME" required />
+                                <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" name="L_NAME" required />
                             </div>
                             <div class="form-group">
-                                            <select class="form-control"  style="width: 45%;"   name="B_NAME"
-                                             required>
-                                                <option>-- service you offer --</option>
+                                            <select class="form-control"  style="width: 45%;"  name="B_NAME"   required />
+                                                <option selected disabled value ="">-- service you offer --</option>
                                                 <option>AC &amp; HVAC Technician</option>
                                                 <option>Appliance Repair</option>
                                                 <option>Carpenter</option>
@@ -101,14 +100,14 @@ function validate() {
                                                 <option>Other Services</option>
                                             </select>
                                                              
-                                <input type="number" class="form-control" id="ABN_NO" placeholder="ABN NO" style="margin-top: 5%;" name="ABN" required >
+                                <input type="number" class="form-control" id="ABN_NO" placeholder="ABN NO" style="margin-top: 5%;" name="ABN" required />
                             </div>
                             <!--Address-->
                             <div class="form-group">
 
                                 <input type="text" class="form-control" id="Street_Address" placeholder="Street Address"
-                                    name="S_ADRESS"  required>
-                                <input type="number" class="form-control" id="Postel_Code" placeholder="Postel Code" name="P_CODE"  required>
+                                    name="S_ADRESS"  required />
+                                <input type="number" class="form-control" id="Postel_Code" placeholder="Postel Code" name="P_CODE"  required/>
                             </div>
                             <!--Address-->
 
@@ -116,13 +115,13 @@ function validate() {
                             <!--Postel-->
                             <div class="form-group">
 
-                                <input type="text" class="form-control" id="State" placeholder="State" name="STATE" required>
-                                <input type="text" class="form-control" id="Suburb" placeholder="Subburb" name="SUBURB" required >
+                                <input type="text" class="form-control" id="State" placeholder="State" name="STATE" required />
+                                <input type="text" class="form-control" id="Suburb" placeholder="Subburb" name="SUBURB" required />
                             </div>
                             <!--Ending postel-->
                             <div class="form-group">
 
-                                <input type="number" class="form-control" id="Contact_No" placeholder="Contact No" name="CONTACT" required>
+                                <input type="number" class="form-control" id="Contact_No" placeholder="Contact No" name="CONTACT" required />
                                 <input type="number" class="form-control" id="Contact_Optional" placeholder="Contact No (Optional)"
                                     name="CONTACT2" >
                             </div>
@@ -130,12 +129,12 @@ function validate() {
                             <div class="form-group">
 
                                 <input type="email" class="form-control" id="email_varification" placeholder="Enter email"
-                                    name="EMAIL" required>
+                                    name="EMAIL" required/>
                             </div>
                             <div class="form-group">
 
-                                <input type="password" class="form-control"  id="password1" placeholder="Create password" name="PASS" required >
-                                <input type="password" class="form-control"  id="password2" placeholder="Confirm password"  name="PASS_2" required >
+                                <input type="password" class="form-control"  id="password1" placeholder="Create password" name="PASS" required />
+                                <input type="password" class="form-control"  id="password2" placeholder="Confirm password"  name="PASS_2" required />
                                
                               
                             </div>
@@ -143,10 +142,8 @@ function validate() {
                                     <span><p id="validate-status"></p></span>
                                   
                                 </div>
-                         
-
                             <div>
-                                <button type="submit" class="btn btn-danger" id="account_btn"><a href=""  style="color: white"> Create Account</a></button>
+                                <button type="submit" class="btn btn-danger" id="account_btn"><h5 style="color: white ; height: 20px;;">Create Account</h5></button>
                             </div>
                         </legend>
                     </form>
