@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="css/customhtml.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+            crossorigin="anonymous">
+    <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F83162459331456"
+        title="oEmbed Form">
+    <link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F83162459331456"
+        title="oEmbed Form">
+    <meta property="og:title" content="Form">
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly" content="true">
+    <title>Form</title>
+    <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.8462" rel="stylesheet" type="text/css">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        .form-label-left {
+            width: 150px;
+        }
+
+        .form-line {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .form-label-right {
+            width: 150px;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background: rgb(255, 255, 255);
+        }
+
+
+
+        .form-all {
+            margin: 0px auto;
+            padding-top: 50px;
+        
+            color: #555 !important;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+            font-size: 14px;
+        }
+
+        .form-radio-item label,
+        .form-checkbox-item label,
+        .form-grading-label,
+        .form-header {
+            color: #555;
+        }
+    </style>
+
+    <style type="text/css" id="form-designer-style">
+        /* Injected CSS Code */
+        @import url('https://shots.jotform.com/elton/genericTheme.css');
+        @import "https://fonts.googleapis.com/css?family=Didact Gothic:light,lightitalic,normal,italic,bold,bolditalic";
+
+        .form-all {
+            font-family: "Didact Gothic", sans-serif;
+        }
+
+        .form-all {
+            width:60% !important;
+            height: 650px;
+        }
+
+        .form-label-left,
+        .form-label-right {
+            width: 150px;
+        }
+
+        .form-label {
+            white-space: normal;
+        }
+
+        .form-label.form-label-auto {
+            display: block;
+            float: none;
+            text-align: left;
+        }
+
+        .form-label-left {
+            display: inline-block;
+            white-space: normal;
+            float: left;
+            text-align: left;
+        }
+
+        .form-label-right {
+            display: inline-block;
+            white-space: normal;
+            float: left;
+            text-align: right;
+        }
+
+        .form-label-top {
+            white-space: normal;
+            display: block;
+            float: none;
+            text-align: left;
+        }
+
+        .form-radio-item label:before {
+            top: 0;
+        }
+
+        .form-all {
+            font-size: 16px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-checkbox-item label,
+        .form-radio-item label {
+            font-weight: normal;
+        }
+
+        .supernova {
+            background-color: #ffffff;
+        }
+
+        .supernova body {
+            background-color: transparent;
+        }
+
+        /*
+        @width30: (unit(@formWidth, px) + 60px);
+        @width60: (unit(@formWidth, px)+ 120px);
+        @width90: (unit(@formWidth, px)+ 180px);
+        */
+        /* | */
+        @media screen and (min-width: 480px) {
+            .supernova .form-all {
+                border: 1px solid #e6e6e6;
+                -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        /* | */
+        /* | */
+        @media screen and (max-width: 480px) {
+            .jotform-form {
+                padding: 10px 0;
+            }
+        }
+
+        /* | */
+        /* | */
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            .jotform-form {
+                padding: 30px 0;
+            }
+        }
+
+        /* | */
+        /* | */
+        @media screen and (min-width: 480px) and (max-width: 599px) {
+            .jotform-form {
+                padding: 30px 0;
+            }
+        }
+
+        /* | */
+        /* | */
+        @media screen and (min-width: 768px) {
+            .jotform-form {
+                padding: 60px 0;
+            }
+        }
+
+        /* | */
+        /* | */
+        @media screen and (max-width: 599px) {
+            .jotform-form {
+                padding: 12px;
+            }
+        }
+
+        /* | */
+        .supernova .form-all,
+        .form-all {
+            background-color: #ffffff;
+            border: 1px solid transparent;
+        }
+
+        .form-header-group {
+            border-color: #e6e6e6;
+        }
+
+        .form-matrix-table tr {
+            border-color: #e6e6e6;
+        }
+
+        .form-matrix-table tr:nth-child(2n) {
+            background-color: #f2f2f2;
+        }
+
+        .form-all {
+            color: #555555;
+        }
+
+        .form-header-group .form-header {
+            color: #555555;
+        }
+
+        .form-header-group .form-subHeader {
+            color: #6f6f6f;
+        }
+
+        .form-sub-label {
+            color: #6f6f6f;
+        }
+
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html {
+            color: #555555;
+        }
+
+        .form-checkbox-item label,
+        .form-radio-item label {
+            color: #6f6f6f;
+        }
+
+        .form-line.form-line-active {
+            -webkit-transition-property: all;
+            -moz-transition-property: all;
+            -ms-transition-property: all;
+            -o-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -ms-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease;
+            -moz-transition-timing-function: ease;
+            -ms-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+            background-color: rgba(255, 251, 234, 0);
+        }
+
+        /* omer */
+        .form-radio-item,
+        .form-checkbox-item {
+            padding-bottom: 0px !important;
+        }
+
+        .form-radio-item:last-child,
+        .form-checkbox-item:last-child {
+            padding-bottom: 0;
+        }
+
+        /* omer */
+        .form-single-column .form-checkbox-item,
+        .form-single-column .form-radio-item {
+            width: 100%;
+        }
+
+        .supernova {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center top;
+            background-repeat: repeat;
+        }
+
+        .supernova {
+            background-image: none;
+            background-image: url("https://shots.jotform.com/elton/images/reg_form_main_bg.png");
+        }
+
+        #stage {
+            background-image: none;
+            background-image: url("https://shots.jotform.com/elton/images/reg_form_main_bg.png");
+        }
+
+        /* | */
+        .form-all {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center top;
+            background-repeat: repeat;
+        }
+
+        .form-header-group {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center top;
+        }
+
+        .form-line {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .form-line {
+            padding: 12px 36px;
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-size: 1em;
+            padding: 9px 15px;
+            font-family: "Didact Gothic", sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            color: #454545 !important;
+            background: #ffffff;
+            box-shadow: none;
+            text-shadow: none;
+        }
+
+        .form-all .form-pagebreak-back,
+        .form-all .form-pagebreak-next {
+            font-size: 1em;
+            padding: 9px 15px;
+            font-family: "Didact Gothic", sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        /*
+        & when ( @buttonFontType = google ) {
+            @import (css) "@{buttonFontLink}";
+        }
+        */
+        h2.form-header {
+            line-height: 1.618em;
+            font-size: 1.714em;
+        }
+
+        h2~.form-subHeader {
+            line-height: 1.5em;
+            font-size: 1.071em;
+        }
+
+        .form-header-group {
+            text-align: left;
+        }
+
+        .form-header-group {
+            background-image: url("https://shots.jotform.com/elton/images/reg_form_header_logo.png");
+        }
+
+        /*.form-dropdown,
+        .form-radio-item,
+        .form-checkbox-item,
+        .form-radio-other-input,
+        .form-checkbox-other-input,*/
+        .form-captcha input,
+        .form-spinner input,
+        .form-error-message {
+            padding: 4px 3px 2px 3px;
+        }
+
+        .form-header-group {
+            font-family: "Didact Gothic", sans-serif;
+        }
+
+        .form-section {
+            padding: 0px 0px 0px 0px;
+        }
+
+        .form-header-group {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .form-header-group {
+            padding: 60px 36px 60px 36px;
+        }
+
+        .form-header-group {
+            background-color: #3cdaff;
+        }
+
+        .form-textbox,
+        .form-textarea {
+            padding: 4px 3px 2px 3px;
+        }
+
+        .form-dropdown {
+            -webkit-appearance: menulist-button;
+            border-color: #cccccc;
+        }
+
+        [data-type="control_dropdown"] .form-input,
+        [data-type="control_dropdown"] .form-input-wide {
+            width: 150px;
+        }
+
+        .form-header-group {
+            border-bottom: none;
+        }
+
+        .form-label {
+            font-family: "Didact Gothic", sans-serif;
+        }
+
+        li[data-type="control_image"] div {
+            text-align: left;
+        }
+
+        li[data-type="control_image"] img {
+            border: none;
+            border-width: 0px !important;
+            border-style: solid !important;
+            border-color: false !important;
+        }
+
+        .form-line-column {
+            width: auto;
+        }
+
+        .form-line-error {
+            background-color: #ffffff;
+            -webkit-box-shadow: inset 0px 3px 11px -7px #ff3200;
+            -moz-box-shadow: inset 0px 3px 11px -7px #ff3200;
+            box-shadow: inset 0px 3px 11px -7px #ff3200;
+        }
+
+        .form-line-error input:not(#coupon-input),
+        .form-line-error textarea,
+        .form-line-error .form-validation-error {
+            -webkit-transition-property: none;
+            -moz-transition-property: none;
+            -ms-transition-property: none;
+            -o-transition-property: none;
+            transition-property: none;
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -ms-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease;
+            -moz-transition-timing-function: ease;
+            -ms-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+            border: 1px solid #fff4f4;
+            -moz-box-shadow: 0 0 3px #fff4f4;
+            -webkit-box-shadow: 0 0 3px #fff4f4;
+            box-shadow: 0 0 3px #fff4f4;
+        }
+
+        .form-line-error .form-error-message {
+            margin: 0;
+            position: absolute;
+            color: #fff;
+            display: inline-block;
+            right: 0;
+            font-size: 10px;
+            position: absolute !important;
+            box-shadow: none;
+            top: 0px;
+            line-height: 20px;
+            color: #FFF;
+            background: #ff3200;
+            padding: 0px 5px;
+            bottom: auto;
+            min-width: 105px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .form-line-error .form-error-message img,
+        .form-line-error .form-error-message .form-error-arrow {
+            display: none;
+        }
+
+        .ie-8 .form-all {
+            margin-top: auto;
+            margin-top: initial;
+        }
+
+        .ie-8 .form-all:before {
+            display: none;
+        }
+
+        /* | */
+        @media screen and (max-width: 480px),
+        screen and (max-device-width: 767px) and (orientation: portrait),
+        screen and (max-device-width: 415px) and (orientation: landscape) {
+            .testOne {
+                letter-spacing: 0;
+            }
+
+            .testTwo {
+                letter-spacing: 1;
+            }
+
+            .jotform-form {
+                padding: 12px 0 0 0;
+            }
+
+            .form-all {
+                border: 0;
+                width: 94% !important;
+                max-width: initial;
+            }
+
+            .form-sub-label-container {
+                width: 100%;
+                margin: 0;
+                margin-right: 0;
+                float: left;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            span.form-sub-label-container+span.form-sub-label-container {
+                margin-right: 0;
+            }
+
+            .form-sub-label {
+                white-space: normal;
+            }
+
+            .form-address-table td,
+            .form-address-table th {
+                padding: 0 1px 10px;
+            }
+
+            .form-submit-button,
+            .form-submit-print,
+            .form-submit-reset {
+                width: 100%;
+                margin-left: 0 !important;
+            }
+
+            div[id*=at_] {
+                font-size: 14px;
+                font-weight: 700;
+                height: 8px;
+                margin-top: 6px;
+            }
+
+            .showAutoCalendar {
+                width: 20px;
+            }
+
+            img.form-image {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .form-matrix-row-headers {
+                width: 100%;
+                word-break: break-all;
+                min-width: 40px;
+            }
+
+            .form-collapse-table,
+            .form-header-group {
+                margin: 0;
+            }
+
+            .form-collapse-table {
+                height: 100%;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .form-collapse-hidden {
+                display: none !important;
+            }
+
+            .form-input {
+                width: 100%;
+            }
+
+            .form-label {
+                width: 100% !important;
+            }
+
+            .form-label-left,
+            .form-label-right {
+                display: block;
+                float: none;
+                text-align: left;
+                width: auto !important;
+            }
+
+            .form-line,
+            .form-line.form-line-column {
+                padding: 2% 5%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            textarea {
+                width: 100%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                max-width: initial !important;
+            }
+
+            .form-dropdown,
+            .form-textarea,
+            .form-textbox {
+                width: 100% !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .form-input,
+            .form-input-wide,
+            .form-textarea,
+            .form-textbox,
+            .form-dropdown {
+                max-width: initial !important;
+            }
+
+            .form-address-city,
+            .form-address-line,
+            .form-address-postal,
+            .form-address-state,
+            .form-address-table,
+            .form-address-table .form-sub-label-container,
+            .form-address-table select,
+            .form-input {
+                width: 100%;
+            }
+
+            div.form-header-group {
+                padding: 60px 36px !important;
+                padding-left: 5% !important;
+                padding-right: 5% !important;
+                margin: 0 0px 2% !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            div.form-header-group.hasImage img {
+                max-width: 100%;
+            }
+
+            [data-type="control_button"] {
+                margin-bottom: 0 !important;
+            }
+
+            [data-type=control_fullname] .form-sub-label-container {
+                width: 48%;
+            }
+
+            [data-type=control_fullname] .form-sub-label-container:first-child {
+                margin-right: 4%;
+            }
+
+            [data-type=control_phone] .form-sub-label-container {
+                width: 65%;
+            }
+
+            [data-type=control_phone] .form-sub-label-container:first-child {
+                width: 31%;
+                margin-right: 4%;
+            }
+
+            [data-type=control_datetime] .form-sub-label-container+.form-sub-label-container,
+            [data-type=control_datetime] .form-sub-label-container:first-child {
+                width: 27.3%;
+                margin-right: 6%;
+            }
+
+            [data-type=control_datetime] .form-sub-label-container+.form-sub-label-container+.form-sub-label-container {
+                width: 33.3%;
+                margin-right: 0;
+            }
+
+            [data-type=control_datetime] span+span+span>span:first-child {
+                display: block;
+                width: 100% !important;
+            }
+
+            [data-type=control_birthdate] .form-sub-label-container,
+            [data-type=control_datetime] span+span+span>span:first-child+span+span,
+            [data-type=control_time] .form-sub-label-container {
+                width: 27.3% !important;
+                margin-right: 6% !important;
+            }
+
+            [data-type=control_birthdate] .form-sub-label-container:last-child,
+            [data-type=control_time] .form-sub-label-container:last-child {
+                width: 33.3% !important;
+                margin-right: 0 !important;
+            }
+
+            .form-pagebreak-back-container,
+            .form-pagebreak-next-container {
+                width: 50% !important;
+            }
+
+            .form-pagebreak-back,
+            .form-pagebreak-next,
+            .form-product-item.hover-product-item {
+                width: 100%;
+            }
+
+            .form-pagebreak-back-container {
+                padding: 0;
+                text-align: right;
+            }
+
+            .form-pagebreak-next-container {
+                padding: 0;
+                text-align: left;
+            }
+
+            .form-pagebreak {
+                margin: 0 auto;
+            }
+
+            .form-buttons-wrapper {
+                margin: 0 !important;
+                margin-left: 0 !important;
+            }
+
+            .form-buttons-wrapper button {
+                width: 100%;
+            }
+
+            .form-buttons-wrapper .form-submit-print {
+                margin: 0 !important;
+            }
+
+            table {
+                width: 100% !important;
+                max-width: initial !important;
+            }
+
+            table td+td {
+                padding-left: 3%;
+            }
+
+            .form-checkbox-item,
+            .form-radio-item {
+                white-space: normal !important;
+            }
+
+            .form-checkbox-item input,
+            .form-radio-item input {
+                width: auto;
+            }
+
+            .form-collapse-table {
+                margin: 0 5%;
+                display: block;
+                zoom: 1;
+                width: auto;
+            }
+
+            .form-collapse-table:before,
+            .form-collapse-table:after {
+                display: table;
+                content: '';
+                line-height: 0;
+            }
+
+            .form-collapse-table:after {
+                clear: both;
+            }
+
+            .fb-like-box {
+                width: 98% !important;
+            }
+
+            .form-error-message {
+                clear: both;
+                bottom: -10px;
+            }
+
+            .date-separate,
+            .phone-separate {
+                display: none;
+            }
+
+            .custom-field-frame,
+            .direct-embed-widgets,
+            .signature-pad-wrapper {
+                width: 100% !important;
+            }
+        }
+
+        /* | */
+
+        /*PREFERENCES STYLE*/
+        .form-all {
+            font-family: Didact Gothic, sans-serif;
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-family: Didact Gothic, sans-serif;
+        }
+
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-family: Didact Gothic, sans-serif;
+        }
+
+        .form-header-group {
+            font-family: Didact Gothic, sans-serif;
+        }
+
+        .form-label {
+            font-family: Didact Gothic, sans-serif;
+        }
+
+        .form-label.form-label-auto {
+
+            display: block;
+            float: none;
+            text-align: left;
+            width: 100%;
+
+        }
+
+        .form-line {
+            margin-top: 12px 36px 12px 36px px;
+            margin-bottom: 12px 36px 12px 36px px;
+        }
+
+        .form-all {
+            width: 600px;
+        }
+
+        .form-label-left,
+        .form-label-right,
+        .form-label-left.form-label-auto,
+        .form-label-right.form-label-auto {
+            width: 150px;
+        }
+
+        .form-all {
+            font-size: 16px
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-size: 16px
+        }
+
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-size: 16px
+        }
+
+        .supernova .form-all,
+        .form-all {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+        }
+
+        .form-all {
+            color: #555;
+        }
+
+        .form-header-group .form-header {
+            color: #555;
+        }
+
+        .form-header-group .form-subHeader {
+            color: #555;
+        }
+
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html,
+        .form-checkbox-item label,
+        .form-radio-item label {
+            color: #555;
+        }
+
+        .form-sub-label {
+            color: #6f6f6f;
+        }
+
+        .supernova {
+            background-color: undefined;
+        }
+
+        .supernova body {
+            background: transparent;
+        }
+
+        .form-textbox,
+        .form-textarea,
+        .form-radio-other-input,
+        .form-checkbox-other-input,
+        .form-captcha input,
+        .form-spinner input {
+            background-color: undefined;
+        }
+
+        .supernova {
+            height: 100%;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-position: center top;
+        }
+
+        .supernova {
+            background-image: url("https://shots.jotform.com/elton/images/reg_form_main_bg.png");
+        }
+
+        #stage {
+            background-image: url("https://shots.jotform.com/elton/images/reg_form_main_bg.png");
+        }
+
+        .form-all {
+            background-image: none;
+        }
+
+        .ie-8 .form-all:before {
+            display: none;
+        }
+
+        .ie-8 {
+            margin-top: auto;
+            margin-top: initial;
+        }
+
+        /*PREFERENCES STYLE*/
+        /*__INSPECT_SEPERATOR__*/
+        @import url('https://shots.jotform.com/elton/genericTheme.css');
+
+        .form-header-group {
+            margin: 0;
+            background-position: left center;
+            background-size: 200px;
+            padding-left: 200px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .form-submit-button {
+            filter: none;
+            box-shadow: 1px 2px 0px #8A8A8A, 0 0 0 10px #07E4F9;
+            padding: 12px 20px;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .form-submit-button:hover {
+            background: #FFF;
+            box-shadow: 1px 2px 0px #8A8A8A, 0 0 0 8px #07E4F9;
+        }
+
+
+        .aligncenter {
+            text-align: center;
+        }
+
+        .aligncenter img {
+            height: 190px;
+            width: 280px;
+        }
+
+
+
+#trapezoid span{
+    color:red;
+}
+#trapezoid {
+    
+	border-bottom: 50px solid #242424;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 550px;
+    text-align:center;
+
+    
+}
+#trapezoid p{
+    color:white;
+    padding-top:10px;
+    
+}
+footer {
+    position: relative;
+   
+}
+.Copyright{
+    position: absolute;
+    bottom: 0;
+
+}
+
+        /* Injected CSS Code */
+    </style>
+
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/CountDown.js"></script>
+    <script src="js/CountDownFinal.js"></script>
+
+    <script>
+            $(document).ready(function() {
+    $("#password2").keyup(validate);
+    });
+    
+    
+    function validate() {
+    var password1 = $("#password1").val();
+    var password2 = $("#password2").val();
+    
+    
+    
+    if(password1 == password2) {
+       $("#validate-status").text("valid");        
+    }
+    else {
+        $("#validate-status").text(" confirm password invalid");  
+    }
+    
+    }
+    
+    
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function limitText(limitField, limitNum) {
+            if (limitField.value.length > limitNum) {
+                limitField.value = limitField.value.substring(0, limitNum);
+            }
+        }
+    </script>
+
+
+    <script language="javascript" type="text/javascript">
+        function limitCode(limitField, limitNum) {
+            if (limitField.value.length > limitNum) {
+                limitField.value = limitField.value.substring(0, limitNum);
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <p class="aligncenter" style="margin-top: 6%;">
+        <img src="images/logo.png" alt="centered image" />
+
+        <p style="text-align: center ; text-transform: uppercase;
+        font-family: Calibri, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: #4f4f51">a platform where tradesmen find quality jobs online</p>
+    </p>
+
+    <div class="container-fluid">
+
+
+        <form class="jotform-form" method="POST" action="/register"  name="form_83162459331456"
+            id="83162459331456" accept-charset="utf-8" novalidate="true">
+            <h4 style="text-align: center"> <b>Complete Registration </b></h4>
+
+            <div class="form-all" >
+              
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+
+                    <div id="cid_3">
+                        <div data-wrapper-react="true">
+                            <span style="vertical-align:top">
+                                <input type="text" id="first_3" name="F_NAME" style="width:48% ; height: 45px; border: 2px solid #ced4da;
+                                border-radius: .25rem;
+                                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    placeholder=" First name" required />
+
+                            </span>
+                            <span style="vertical-align:top">
+                                <input type="text" id="last_3" style="width: 48% ; height: 45px; border: 2px solid #ced4da;
+                                border-radius: .25rem;
+                                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                   name="L_NAME" placeholder=" Last Name" required/>
+
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <div class="form-group">
+                    <li style="margin-left: 4%; ">
+
+                        <select class="form-control" name="B_NAME"  style="width:46% ; height: 45px; border: 2px solid #ced4da;
+                        border-radius: .25rem;
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; display: inline "
+                            required />
+                            <option selected disabled value="">-- Primary trade of service you offer --</option>
+                            <option>AC &amp; HVAC Technician</option>
+                            <option>Appliance Repair</option>
+                            <option>Audiovisual Equipment Installation</option>
+                            <option>Bathroom Renovation</option>
+                            <option>Building Construction</option>
+                            <option>Electrician</option>
+                            <option>Bricklaying</option>
+                            <option>Carpenter</option>
+                            <option>Cleaning</option>
+                            <option>Concrete &amp; Cement</option>
+                            <option>Construction Services</option>
+                            <option>Drainers</option>
+                            <option>Earthmoving</option>
+                            <option>Electricians</option>
+                            <option>Fencing Construction</option>
+                            <option>Flooring</option>
+                            <option>Gardeners</option>
+                            <option>Glazier</option>
+                            <option>Guttering</option>
+                            <option>Handyman</option>
+                            <option>Home Pools &amp; Spas</option>
+                            <option>Indoor Home Improvement</option>
+                            <option>Installation Trade Services</option>
+                            <option>Insulation</option>
+                            <option>Kitchen Renovation</option>
+                            <option>Landscaping</option>
+                            <option>Locksmiths</option>
+                            <option>Outdoor Home Improvement</option>
+                            <option>Painters</option>
+                            <option>Pest Control</option>
+                            <option>Plasterers</option>
+                            <option>Plumbing</option>
+                            <option>Refrigeration Installation &amp; Repair</option>
+                            <option>Removalists</option>
+                            <option>Roofing </option>
+                            <option>Rubbish &amp; Waste Removal</option>
+                            <option>Security &amp; Safety System Installation</option>
+                            <option>Shades &amp; Blinds</option>
+                            <option>Solar</option>
+                            <option>Tiling</option>
+                            <option>Tree Surgeon</option>
+
+                        </select>
+                        <span style="vertical-align:top">
+                            <input type="number" id="last_3" style="width: 46% ;  height: 45px; border: 2px solid #ced4da;
+                            border-radius: .25rem;
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; display: inline;"
+                            name="ABN" placeholder="ABN Number" onKeyDown="limitText(this,11);" onKeyUp="limitText(this,11);"
+                                required/>
+
+
+                        </span>
+
+                    </li>
+
+
+                </div>
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+
+                    <div id="cid_3">
+                        <div data-wrapper-react="true">
+                            <select class="form-control"  name="STATE" style="width: 48% ;  height: 45px; border: 2px solid #ced4da;
+                            border-radius: .25rem;
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; display: inline; "
+                                required />
+                                <option selected disabled value="">-- State--</option>
+                                <option>Victoria</option>
+                                <option>South Australia</option>
+                                <option>Northern Territory</option>
+                                <option>Westren Australia</option>
+                                <option>Queens Land</option>
+                                <option>Tasmania</option>
+                                <option>New South Wales</option>
+
+                            </select>
+                            <span style="vertical-align:top">
+                                <input type="text" id="last_3" style="width: 48% ;  height: 45px; border: 2px solid #ced4da;
+                                border-radius: .25rem;
+                                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; display: inline;"
+                                name="SUBURB" placeholder="Suburb" required />
+
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+
+                    <div id="cid_3">
+                        <div data-wrapper-react="true">
+                            <span style="vertical-align:top">
+                                <input type="text" id="first_3" name="" style="width: 65% ;  height: 45px; border: 2px solid #ced4da;
+                                    border-radius: .25rem;
+                                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    placeholder=" Complete Adress" required />
+
+                            </span>
+                            <span style="vertical-align:top">
+                                <input type="number" id="last_3" style=" width:31%; height: 45px; border: 2px solid #ced4da;
+                                    border-radius: .25rem;
+                                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    name="P_CODE" placeholder="post code"   onKeyDown="limitCode(this,4);"
+                                    onKeyUp="limitCode(this,4);" required/>
+
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+
+                <li id="id_6">
+
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+
+                    <div id="cid_3">
+                        <div data-wrapper-react="true">
+                            <span style="vertical-align:top">
+                                <input type="number" id="first_3" id="phoneNumber" name="CONTACT" style="width: 48% ;  height: 45px; border: 2px solid #ced4da;
+                                    border-radius: .25rem;
+                                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    placeholder="Primary Contact (xx) xxxx-xxxx" required />
+
+                            </span>
+                            <span style="vertical-align:top">
+                                <input type="number" id="last_3" style="width: 48% ; height: 45px; border: 2px solid #ced4da;
+                                    border-radius: .25rem;
+                                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    name="CONTACT2" placeholder="Contact no optional" required />
+
+                            </span>
+
+                        </div>
+                    </div>
+                </li>
+                </li>
+                <li class="form-line" id="id_4">
+                    <span style="vertical-align:top">
+                        <input type="email" id="first_3" name="EMAIL" style="width: 55% ;  height: 45px; border: 2px solid #ced4da;
+                        border-radius: .25rem;
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                            placeholder="email" required />
+
+                    </span>
+                </li>
+
+
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+
+                    <div id="cid_3">
+                        <div data-wrapper-react="true">
+                            <span style="vertical-align:top">
+                                <input type="password" id="password1" name="PASS" style="width: 48% ;  height: 45px; border: 2px solid #ced4da;
+                                border-radius: .25rem;
+                                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                    placeholder="password" required />
+
+                            </span>
+                            <span style="vertical-align:top">
+                                <input type="password" id="password2" style="width: 48% ;  height: 45px; border: 2px solid #ced4da;
+                                border-radius: .25rem;
+                                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;"
+                                name="PASS_2" placeholder="Confirm password" required />
+
+                            </span>
+
+
+                            <div class="form-group">
+                                    <span>
+                                        <p id="validate-status" style="color: red"></p>
+                                    </span>
+    
+                                </div>
+                        </div>
+                    </div>
+                </li>
+
+                <div>
+                    <button type="submit" class="aligncenter" style="margin-top: 5%; margin-left: 33%; background-color:#e61d2e; border: 1px solid #ced4da;
+                        border-radius: .25rem;height: 40px; "
+                        id="account_btn">
+                        <h5 style="color: white ; height: 22px;">Create Account</h5>
+                    </button>
+                </div>
+
+
+
+
+            </div>
+
+        </form>
+
+</div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background:repeating-linear-gradient( -40deg, #444d56 0px, #444d56 8px, #353e48 2px, #353e48 10px, #444d56 0.5px);
+width: 100%;
+   
+    z-index: -100;
+    position: absolute;">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+                            
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mb-4"><img src="images/Footer_logo.png" alt="" style="
+                            width: 230px;
+                            height: 60px;"></h5>
+                        <p style="color: white">Trade Pages Australia - Home Construction , Extensions ,Renovations &amp; Maintenance - where trust matters. A great Way to get Connected with thje tradesman.Quotes form the Qualified and trustworthy Tradesman in A Click ,. No running aroud,Save time, save Money</p>
+                       
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                        <!-- Contact details -->
+                        <h5 class="font-weight-bold text-uppercase mb-4" style="color: white">Contact Us</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p style="color: white">
+                                    <i class="fa fa-home mr-3"></i>level 18, 101 Collins Street Melbourne Vic 3000</p>
+                            </li>
+                            <li>
+                                <p style="color: white"> 
+                                    <i class="fa fa-envelope mr-3"></i>  contact@tradepage.com</p>
+                            </li>
+                            <li>
+                                <p style="color: white">
+                                    <i class="fa fa-phone mr-3"></i>  + 01 234 567 88</p>
+                            </li>
+                        
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+
+
+                    <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase " style="color: white">Follow us</h6>
+    
+                            <div class="Social_Icon"><i class="fab fa-facebook" style="color: white"></i>
+                                <i class="fab fa-twitter" style="color: white"></i>
+                                <i class="fab fa-instagram" style="color: white"></i>
+                                <i class="fab fa-youtube" style="color: white"></i></div>
+    
+                        </div>
+
+
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class=".Copyright">
+                    <div id="trapezoid" style="margin-left: 27%;">
+                        <p>Copyright 2018 <span>TRADEPAGES </span>All Right Reserved</p>
+                    </div>
+
+                </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    
+
+        <script src="js/plugins.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr-3.6.0.min.js"></script>
+        <script src="vendor/jquery-3.3.1.min.js"></script>
+        <script src="vendor/modernizr-3.6.0.min.js"></script>
+        <script src="js/CountDown.js"></script>
+        <script src="js/CountDownFinal.js"></script>
+
+
+
+</body>
+
+</html>
